@@ -1,0 +1,115 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "f8a8b816",
+   "metadata": {},
+   "source": [
+    "<b>Lab 1:</b><br>\n",
+    "\n",
+    "<b><h2>Introduction To python<h2></b><br>\n",
+    "\n",
+    "<b><h1>Basic Date types:</h2></b>\n",
+    "* Numerical Types: Integer,float,complex.\n",
+    "* Sequence: String, List Tuples.\n",
+    "* Mapping and set: Dictionary,sets\n",
+    "* Others: boolean, none\n",
+    "\n",
+    "<h3>The type() function</h3>\n",
+    "The type() function is a build-in utility used to identify the class (data type) of an object. \n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "ab312f8c",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "",
+     "evalue": "",
+     "output_type": "stream",
+     "traceback": [
+	  "<class 'int'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "age=25 \n",
+    "print (type(age))\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "7e6bf7a8",
+   "metadata": {},
+   "source": [
+    "<h3>The Input Function</h3>\n",
+    "he input() function allows a program to pause and receive text from the user via the keyboard.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "fb3b7caa",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "\n",
+    "\n",
+    "#Example\n",
+    "name= input(\"Enter your name: \")\n",
+    "print(\"Hello, \" + name )\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "608efd3b",
+   "metadata": {},
+   "source": [
+    "<h3>Need For Typecasting</h3>\n",
+    "Since input() always returns a string, we often need Typecasting-the process of converting one data type into another. Without this the mathematical operations would fail. \n",
+    "\n",
+    "<b><h3>Program: Adding Two Numbers</h3></b>\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "81de187f",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "\n",
+    "\n",
+    "def calculate_area(length, width):\n",
+    "    area = length * width\n",
+    "    return area\n",
+    "\n",
+    "l = float(input(\"Enter length: \"))\n",
+    "w = float(input(\"Enter width: \"))\n",
+    "\n",
+    "result = calculate_area(l, w)\n",
+    "print(\"length is:\", l)\n",
+    "print(\"width is:\", w)\n",
+    "print(f\"the area of the rectangle is: {result}\")\n",
+    "\n"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "name": "python",
+   "version": "3.13.11"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
